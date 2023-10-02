@@ -78,17 +78,17 @@ app.get("/api/v1/getEvents" , async(req,res)=>{
 const port = process.env.PORT || 3500;
 
 // Serve static files from the 'dist' directory
-// app.use('/', express.static('build'));
+app.use('/', express.static('build'));
 
-// // Catch-all route for serving the 'index.html' file
-// app.use((req, res) => {
-//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+// Catch-all route for serving the 'index.html' file
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
-app.get("/", (req, res) => {
-    app.use(express.static(path.resolve(__dirname, 'build')))
-    res.sendFile(path.resolve(__dirname,'build','index.html'))
-})
+// app.get("/", (req, res) => {
+//     app.use(express.static(path.resolve(__dirname, 'build')))
+//     res.sendFile(path.resolve(__dirname,'build','index.html'))
+// })
 
 // app.get("/", (req, res) => {
 //     app.use(express.static(path.resolve(__dirname, 'dist')))
