@@ -1,0 +1,148 @@
+.eventwrapper{
+    background: linear-gradient(to right, #0f0e0e, #c3c0c0);
+    font-family: "Nunito Sans";
+    padding: 20px;
+}
+
+.pehead1{
+  font-size: 24px;
+  color: white;
+  font-family: inherit;
+  margin: 0px;
+}
+
+.pehead2{
+  font-size: 14px;
+  color: white;
+  font-family: inherit;
+  margin : 0px;
+}
+
+.eventcardcont{
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  overflow-x : scroll;
+}
+
+.eventcardcont::-webkit-scrollbar{
+  display: none;
+}
+
+.eventcard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width : 400px;
+  height : 380px;
+  margin : 10px;
+}
+
+.eventcard > img{
+  width: 270px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.eventcard > p{
+  font-size: medium;
+  font-weight: bold;
+}
+
+.schedule{
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 95%;
+  color: grey;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.schedule > span{
+  font-size: 16px;
+  left : 0;
+  margin-left:10px;
+}
+
+.schedule > p{
+  margin : 0;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+
+.cardoptions{
+  margin-top : 10px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  /* background-color: rgba(128, 128, 128, 0.434); */
+  border-radius: 8px;
+  /* border : 1px solid black */
+}
+
+.cardoptions > img{
+  width : 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.cardoptions > img:hover{
+  border: 2px solid rgb(255, 140, 159);
+  cursor: pointer;
+}
+
+.cardoptions > p{
+  font-family: "Nunito Sans";
+  word-wrap: break-word ;
+}
+
+.heart{
+  transition: 0.2s ease-in;
+  transform: scale(1)
+}
+
+.heart:hover{
+  transform: scale(0.9);
+  color: rgb(241, 91, 91);
+  cursor: pointer;
+}
+
+.pricebtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.pricebtn > a{
+  padding: 5px;
+  border:2px solid black;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out ;
+  transform: scale(1);
+}
+
+.pricebtn > a:hover{
+  cursor: pointer;
+  transform: scale(0.8);
+  box-shadow: 5px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(232, 160, 172);
+  
+}
+
+.pricebtn > p{
+  color : rgb(30, 97, 30);
+  font-size: 18px;
+  margin-bottom: 8;
+  font-weight: bold;
+}

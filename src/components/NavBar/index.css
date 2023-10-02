@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Poppins:wght@300;400&family=Shadows+Into+Light&display=swap');
+.navbarwrapper{
+    margin : 0px;
+    top : 0;
+    left : 0;
+    right : 0;
+    width: 100%;
+    position: fixed;
+    z-index: 111;
+}
+
+.navcont{
+    margin: 0px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.868), transparent);
+    backdrop-filter: blur(2px);
+}
+
+.web-logo{
+    width : 150px;
+    height: 50px;
+    border-radius: 8px;
+    /* background-color: white; */
+}
+
+.menu-links{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding : 5px;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: white;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-links:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    border : 1px solid rgb(245, 245, 245);
+    color: rgb(255, 255, 255);
+    background-color: rgba(247, 247, 247, 0.285);
+    box-shadow: 0 5px 15px rgba(81, 65, 92, 0.4);
+    transform: scale(0.9);
+}
+
+.account-setting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-setting > span{
+    font-size: 30px;
+    color: white;
+}
+
+.eventbtn{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding : 5px;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+.hamicon{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .eventbtn{
+        display: none;
+    }
+    .menu{
+        display:none;
+
+    }
+    .hamicon{
+        display: contents;
+    }
+    .menu-links{
+        font-size: 12px;
+        margin: 0;
+        padding: 4px;
+    }
+    .web-logo{
+        width: 112.5px;
+        height: 37.5px;
+    }
+    .account-setting{
+        background: rgb(42 84 168 / 79%);
+        border-radius: 4px;
+        backdrop-filter: blur(1px);
+        padding: 1px;
+    }
+    .account-setting > span {
+        font-size: 22px;
+        color: white;
+    }
+    
+}

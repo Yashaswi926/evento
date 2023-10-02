@@ -1,0 +1,281 @@
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.homewrapper{
+    /* position: fixed; */
+    overflow: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-slider-cont{
+    margin : 0;
+    padding : 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.sliderwrapper{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Search Field styling */
+
+.search-field {
+    padding: 10px;
+    width: calc(100% - 20px);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 250px; 
+    background-color: rgba(0, 0, 0, 0.45); 
+    text-align: center;
+    z-index: 11;
+    font-family: "Nunito Sans";
+    letter-spacing: 2px;
+    backdrop-filter: blur(2px);
+}
+
+.ps1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ps2 {
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.ps1{
+    margin-top: 0;
+    font-size: 50px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-bottom: 5;
+}
+
+.ps2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inputfieldcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 2s ease-in-out;
+}
+
+.inputfieldcont > span{
+    background-color: white;
+    color: grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 33px;
+}
+
+.inputfield{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: black;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: 'Nunito Sans';
+
+
+}
+
+.srchinp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.fieldsel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 4px;
+}
+.selectfield{
+    border-radius: 8px;
+    color: rgba(114, 114, 114, 0.847);
+    background-color: white;
+    width: 200px;
+    height: 33px;
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+}
+
+.searchbtndiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    /* padding: 2.5px; */
+    height: 30px;
+    padding: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.searchbtn{
+    
+    color: rgb(4, 4, 4);
+    width: 100px;
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.searchbtn:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    color:  rgb(96, 96, 96);
+    background-color: rgb(238, 238, 238);
+    width: 100px;
+    height: 36px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: 2px solid rgb(96, 96, 96);
+    transform: scale(0.9);
+}
+
+.textslider{
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.category-cont{
+    width: 90%;
+    overflow-x: scroll;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.category-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+.eventcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.9);
+    width: 100px;
+}
+
+.eventcards > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventcards:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+    box-shadow: 5px 10px rgba(69, 69, 69, 0.148);
+
+}
+
+.pe1{
+    font-family: 'Nunito Sans';
+    margin : 0px;
+    font-weight: bold;
+    
+}
+.pe2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: grey;
+    margin-top: 2px;
+}
+
+.eventcards > span{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 888px) {
+    .inputfieldcont{
+        flex-direction: column;
+    }
+    .inputfieldcont > div{
+        margin: 5px;
+    }
+    .srchinp{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .fieldsel{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .searchbtndiv{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .searchbtn{
+        width: 100%;
+    }
+    .ps1{
+        font-size: 32px;
+    }
+    .textslider{
+        width: 80%;
+    }
+}

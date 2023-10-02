@@ -1,0 +1,83 @@
+.home-page-wrapper{
+    font-family: "Nunito Sans";
+    color : black;
+    padding : 20px;
+}
+
+.hp1{
+    color : black;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.hp2{
+    margin :0;
+    color: grey;
+}
+
+.tellwrapper{
+    margin: 50px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.tellwrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.tellcard{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.tellcard > img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0.9);
+}
+
+.tellcard > img:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.hpt1{
+    margin: 0;
+    font-size: 23px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.hpt2{
+    width: 80%;
+    margin: 10px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+@media screen and (max-width: 800px){
+    .tellwrapper {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        /* overflow-x: scroll; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+}

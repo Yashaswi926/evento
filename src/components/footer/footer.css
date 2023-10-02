@@ -1,0 +1,117 @@
+.footerwrapper{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.811);
+    color : white;
+    font-family: "Nunito Sans";
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px; */
+}
+
+.appdetails{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.appdetails > div{
+    margin : 10px;
+    /* border:1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width : 300px;
+}
+
+
+.webdetails > img{
+    width: 100px;
+    height:40px;
+}
+
+.webdetails > p{
+    word-wrap: break-word;
+}
+
+.cmplogo > img{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.webdetails > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.about > p{
+    font-size: 20px;
+    
+}
+
+.about > a{
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.about > a:hover{
+    color : rgb(223, 128, 223)
+}
+.about > hr {
+    width: 50px;
+}
+
+.contact > p{
+    font-size: 20px;
+}
+
+.contact > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact > div > span{
+    margin: 5px;
+}
+
+.downloadapp > p{
+    font-size: 20px;
+}
+
+.downloadapp > img{
+    width: 150px;
+    height : 40px;
+    margin : 5px;
+}
+
+.terms-cont{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.terms-cont > div{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.terms-cont > div > div > a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
