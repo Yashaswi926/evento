@@ -72,9 +72,7 @@ app.get("/api/v1/getEvents" , async(req,res)=>{
 
 const port = process.env.PORT || 3500;
 
-// Serve static files from the 'dist' directory
-// app.use('/', express.static('build'));
-app.use('/', express.static('build', { type: 'application/javascript' }));
+app.use('/', express.static('build'));
 
 // Catch-all route for serving the 'index.html' file
 app.use((req, res) => {
