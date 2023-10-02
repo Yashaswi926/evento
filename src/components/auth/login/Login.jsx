@@ -14,8 +14,8 @@ const Login = () => {
     const [eye , setEye] = useState("visibility_off")
     const [passwordtype , setPasswordtype] = useState("password")
     const handleEye = ()=>{
-        eye == "visibility_off" ? setEye("visibility") : setEye("visibility_off")
-        passwordtype == "password" ? setPasswordtype("text") : setPasswordtype("password")
+        eye === "visibility_off" ? setEye("visibility") : setEye("visibility_off")
+        passwordtype === "password" ? setPasswordtype("text") : setPasswordtype("password")
     }
 
     const loginNow = () => {

@@ -2,10 +2,6 @@ const User = require('./../config/models/User.js')
 const { base64decode , base64encode } = require('nodejs-base64')
 
 const bcrypt = require('bcrypt')
-const dotenv = require('dotenv')
-dotenv.config()
-
-
 const authentication = () => {
     return {
 

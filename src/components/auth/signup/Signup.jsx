@@ -15,8 +15,8 @@ const Signup = () => {
     const [eye , setEye] = useState("visibility_off")
     const [passwordtype , setPasswordtype] = useState("password")
     const handleEye = ()=>{
-        eye == "visibility_off" ? setEye("visibility") : setEye("visibility_off")
-        passwordtype == "password" ? setPasswordtype("text") : setPasswordtype("password")
+        eye === "visibility_off" ? setEye("visibility") : setEye("visibility_off")
+        passwordtype === "password" ? setPasswordtype("text") : setPasswordtype("password")
     }
 
     const registerNow = () => {
@@ -26,7 +26,7 @@ const Signup = () => {
             return null
         }
 
-        if( a.password != a.cnfpassword){
+        if( a.password !== a.cnfpassword){
             toast.error("Password Does Not Match")
             return null
         }

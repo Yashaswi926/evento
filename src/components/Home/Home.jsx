@@ -1,12 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
 import "./index.css"
 
 
 
 
 const Home = () => {
-    const [imageValue , setImageValue] = useState(0);
     return (
         <>
         <div className="homewrapper">

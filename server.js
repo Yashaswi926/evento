@@ -4,11 +4,6 @@ const app = express();
 const cors = require("cors");
 const path  = require("path")
 
-// const { fileURLToPath }  = require('url');
-
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-//Adding url encoders
 app.use(express.json({limit: '3mb'}));
 app.use(express.urlencoded({limit: '3mb'}));
 app.use(cors())
@@ -78,22 +73,13 @@ app.get("/api/v1/getEvents" , async(req,res)=>{
 const port = process.env.PORT || 3500;
 
 // Serve static files from the 'dist' directory
-app.use('/', express.static('build'));
+// app.use('/', express.static('build'));
+app.use('/', express.static('build', { type: 'application/javascript' }));
 
 // Catch-all route for serving the 'index.html' file
 app.use((req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-
-// app.get("/", (req, res) => {
-//     app.use(express.static(path.resolve(__dirname, 'build')))
-//     res.sendFile(path.resolve(__dirname,'build','index.html'))
-// })
-
-// app.get("/", (req, res) => {
-//     app.use(express.static(path.resolve(__dirname, 'dist')))
-//     res.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
-// })
 
 const listener = app.listen(port, () => {
     console.log("http://127.0.0.1:" + port);
